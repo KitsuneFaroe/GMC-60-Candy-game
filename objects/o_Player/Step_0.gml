@@ -8,7 +8,7 @@ if(angle_mov != 0){
 
 var input_push = input_axis_check(Input.mov_foward) * 10 * controlable
 
-push = (dash_timer>0) ? dash_timer*15 : ( input_push>0 ? input_push : (input_push * 0.2))
+push = (dash_timer>0) ? dash_timer*13 : ( input_push>0 ? input_push : (input_push * 0.2))
 var push_x = lengthdir_x(push, phy_rotation)
 var push_y = lengthdir_y(push, phy_rotation)
 if(push != 0){
@@ -25,4 +25,8 @@ else if (dash_timer = 0) {
 	dash_timer--
 	phy_speed_x *= .6
 	phy_speed_y *= .6
+}
+
+if(keyboard_check_pressed(vk_left)){
+	egg = 30 + 30
 }
