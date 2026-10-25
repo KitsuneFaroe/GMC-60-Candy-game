@@ -1,0 +1,1 @@
+image_angle = phy_rotation-90
