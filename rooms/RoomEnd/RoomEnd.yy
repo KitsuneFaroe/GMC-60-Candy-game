@@ -13,7 +13,7 @@
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_5ED02786","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5ED02786","objectId":{"name":"o_Player","path":"objects/o_Player/o_Player.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"o_Player","path":"objects/o_Player/o_Player.yy",},"propertyId":{"name":"controlable","path":"objects/o_Player/o_Player.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"False",},
-          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":180.0,"scaleX":5.0,"scaleY":5.0,"x":704.0,"y":192.0,},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":270.0,"scaleX":5.0,"scaleY":5.0,"x":704.0,"y":192.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
@@ -25,9 +25,9 @@
   "parentRoom":null,
   "physicsSettings":{
     "inheritPhysicsSettings":false,
-    "PhysicsWorld":false,
+    "PhysicsWorld":true,
     "PhysicsWorldGravityX":0.0,
-    "PhysicsWorldGravityY":10.0,
+    "PhysicsWorldGravityY":0.0,
     "PhysicsWorldPixToMetres":0.1,
   },
   "resourceType":"GMRoom",

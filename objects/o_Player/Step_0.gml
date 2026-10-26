@@ -1,4 +1,4 @@
-if(controlable and keyboard_check_pressed(vk_shift)) dash_timer = .3 * game_get_speed(gamespeed_fps)
+if(controlable and input_check_pressed(Input.a)) dash_timer = .3 * game_get_speed(gamespeed_fps)
 
 var angle_mov = - input_axis_check(Input.mov_angle) * controlable
 if(angle_mov != 0){

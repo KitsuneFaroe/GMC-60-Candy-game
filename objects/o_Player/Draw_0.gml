@@ -14,7 +14,7 @@ var _vec = rotate_vec(_xcenter, sprite_get_yoffset(s_PlayerHead),image_angle)
 var _ox = x - _vec[0]*_scale
 var _oy = y - _vec[1]*_scale
 
-draw_circle(_ox, _oy, 3, false)
+//draw_circle(_ox, _oy, 3, false)
 
 _vec = rotate_vec(sprite_get_xoffset(s_PlayerLeaf2), sprite_get_yoffset(s_PlayerLeaf2),image_angle)
 _x = _ox + _vec[0]*_scale
@@ -44,4 +44,4 @@ draw_self_ext(s_PlayerLeaf1,,_x,_y,_scale*-1,_scale, image_angle-leaf1_a)
 _x = x+lengthdir_x(16*image_yscale, phy_rotation)
 _y = y+lengthdir_y(16*image_yscale, phy_rotation)
 
-draw_circle(_x, _y, 3, false)
+//draw_circle(_x, _y, 3, false)

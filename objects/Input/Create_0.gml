@@ -18,8 +18,8 @@ mov_foward = [
 ]
 
 a = [
-	[input_keyboard, ord("Z")],
-	[input_keyboard, ord("O")],
+	[input_keyboard, vk_shift],
+	[input_keyboard, vk_space],
 	[input_mouse, mb_left],
 	[input_gamepad, [gamepad, gp_face1]],
 ]
