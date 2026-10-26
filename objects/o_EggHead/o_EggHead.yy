@@ -41,8 +41,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_Egg",
-    "path":"sprites/s_Egg/s_Egg.yy",
+    "name":"s_EggOld",
+    "path":"sprites/s_EggOld/s_EggOld.yy",
   },
   "spriteMaskId":null,
   "visible":true,

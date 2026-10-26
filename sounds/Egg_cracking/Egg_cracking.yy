@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"Egg_cracking",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":4.3093195,
+  "exportDir":"",
+  "name":"Egg_cracking",
+  "parent":{
+    "name":"unsorted",
+    "path":"folders/unsorted.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"Egg_cracking.wav",
+  "volume":1.0,
+}

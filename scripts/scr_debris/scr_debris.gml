@@ -1,7 +1,18 @@
 debris_lookup = {}
 	debris_lookup[$ s_Egg] = {
-		offsets : [64,35,64,95],
-		params :{}
+		offsets : [276,148, 276,375],
+	}
+	debris_lookup[$ s_Corn] = {
+		offsets : [125,54, 87,130, 164,145, 61,207, 118,266, 205,248]
+	}
+	debris_lookup[$ s_Rulete] = {
+		offsets : [218,57, 73,186, 222,211, 373,152, 130,362, 291,361, 400,274]
+	}
+	debris_lookup[$ s_Sweet] = {
+		offsets : [82,73, 176,69, 79,152, 175, 169]
+	}
+	debris_lookup[$ s_Stick] = {
+		offsets : [84,72, 74,183, 71,276, 135,318, 80,373, 74,468]
 	}
 
 function debris_create(x_col=x, y_col=y){
@@ -27,6 +38,7 @@ function debris_create(x_col=x, y_col=y){
 		instance_create_depth(_x,_y,depth,o_Debris,{
 			sprite_index,
 			image_index: 1+i,
+			image_blend,
 			image_angle,
 			image_xscale,
 			image_yscale,

@@ -9,7 +9,7 @@ var _camera = camera_get_active()
 surface_set_target(egg_surf)
 draw_clear_alpha(c_black,0)
 camera_apply(_camera)
-//matrix_build(0,0,0,0,0,0,_w, _h,0,mat)
+//matrix_build(0,0,0,0,0,0,.5, .5,0,mat)
 //matrix_set(matrix_world,mat)
 with(o_EggLiquid){
 	draw_self()

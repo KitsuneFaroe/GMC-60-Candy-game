@@ -2,6 +2,7 @@ if(dash_timer < 0) return;
 
 dash_timer*=.75
 with(other){
+	audio_play_sound(sfx_Powerup,10,false)
 	repeat(ceil(amount/5)){
 	instance_create_layer(x,y,"Fore",o_SugarDust,{
 		image_angle : random(360),
