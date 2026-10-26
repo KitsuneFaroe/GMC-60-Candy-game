@@ -1,5 +1,5 @@
 shader_set(sh_Turbulence)
-shader_set_uniform_f(shader_get_uniform(sh_Turbulence, "time"), .3* current_time/1000)
+shader_set_uniform_f(shader_get_uniform(sh_Turbulence, "time"),  current_time/1000)
 	var _camera = camera_get_active()
 	camera_apply(camera_get_default())
 	draw_sprite_stretched_ext(s_Back, 0,0,0,room_width,room_height,image_blend,image_alpha)

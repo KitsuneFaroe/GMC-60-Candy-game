@@ -6,13 +6,26 @@ repeat(array_length(tail)/3){
 
 
 var _scale = size * sprite_width/sprite_get_width(s_PlayerHead);
-draw_self_ext(s_PlayerHead,,,,_scale,_scale)
-draw_self_ext(s_PlayerEyes,alarm[6]>0,,,_scale,_scale)
-
 var _xcenter = sprite_get_xoffset(s_PlayerHead)
 var _vec = rotate_vec(_xcenter, sprite_get_yoffset(s_PlayerHead),image_angle)
 var _ox = x - _vec[0]*_scale
 var _oy = y - _vec[1]*_scale
+
+_vec = rotate_vec(sprite_get_xoffset(s_PlayerLeafBack), sprite_get_yoffset(s_PlayerLeafBack),image_angle)
+var _x = _ox + _vec[0]*_scale
+var _y = _oy + _vec[1]*_scale
+draw_self_ext(s_PlayerLeafBack,,_x,_y,_scale   ,_scale, image_angle+15+leafb_a*1.5)
+
+var _offset = sprite_get_xoffset(s_PlayerLeafBack)
+_vec = rotate_vec(_offset+2*(_xcenter-_offset), sprite_get_yoffset(s_PlayerLeafBack),image_angle)
+_x = _ox + _vec[0]*_scale
+_y = _oy + _vec[1]*_scale
+draw_self_ext(s_PlayerLeafBack,,_x,_y,_scale*-1,_scale, image_angle-15-leafb_a*1.5)
+
+
+draw_self_ext(s_PlayerHead,,,,_scale,_scale)
+draw_self_ext(s_PlayerEyes,alarm[6]>0,,,_scale,_scale)
+
 
 //draw_circle(_ox, _oy, 3, false)
 
@@ -21,7 +34,7 @@ _x = _ox + _vec[0]*_scale
 _y = _oy + _vec[1]*_scale
 draw_self_ext(s_PlayerLeaf2,,_x,_y,_scale   ,_scale, image_angle+15+leaf1_a*1.5)
 
-var _offset = sprite_get_xoffset(s_PlayerLeaf2)
+_offset = sprite_get_xoffset(s_PlayerLeaf2)
 _vec = rotate_vec(_offset+2*(_xcenter-_offset), sprite_get_yoffset(s_PlayerLeaf2),image_angle)
 var _x = _ox + _vec[0]*_scale
 var _y = _oy + _vec[1]*_scale
