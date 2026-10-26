@@ -12,3 +12,13 @@ leaf2_a = 0
 leafb_a = 0
 
 aux_list = ds_list_create()
+
+tail = array_create(10*3,0)
+
+var i = 0
+repeat(array_length(tail)/3){
+	tail[i  ]=x+i
+	tail[i+1]=y+i
+	tail[i+2]=phy_rotation+90
+	i++
+}

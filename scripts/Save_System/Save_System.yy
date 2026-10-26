@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Save_System",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Save_System",
+  "parent":{
+    "name":"Intro-Transition-Save",
+    "path":"folders/Intro-Transition-Save.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

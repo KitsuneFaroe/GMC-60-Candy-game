@@ -1,3 +1,10 @@
+var i = 0
+repeat(array_length(tail)/3){
+	draw_circle(tail[i*3],tail[i*3+1],4,false)
+	i++
+}
+
+
 var _scale = size * sprite_width/sprite_get_width(s_PlayerHead);
 draw_self_ext(s_PlayerHead,,,,_scale,_scale)
 draw_self_ext(s_PlayerEyes,alarm[6]>0,,,_scale,_scale)
