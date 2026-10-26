@@ -6,9 +6,9 @@ if(angle_mov != 0){
 	phy_angular_velocity = clamp(phy_angular_velocity, -rot_max, rot_max)
 }
 
-var input_push = input_axis_check(Input.mov_foward) * 10 * controlable
+var input_push = input_axis_check(Input.mov_foward) * 16 * controlable * image_xscale
 
-push = (dash_timer>0) ? dash_timer*13 : ( input_push>0 ? input_push : (input_push * 0.2))
+push = (dash_timer>0) ? 100*image_xscale : ( input_push>0 ? input_push : (input_push * 0.4))
 var push_x = lengthdir_x(push, phy_rotation)
 var push_y = lengthdir_y(push, phy_rotation)
 if(push != 0){
@@ -29,4 +29,30 @@ else if (dash_timer = 0) {
 
 if(keyboard_check_pressed(vk_left)){
 	egg = 30 + 30
+}
+
+ds_list_clear(aux_list)
+var _radius = sprite_width*1.
+var _amount = collision_circle_list(x,y, _radius, o_SugarPart, false, true,aux_list,false)
+
+var i = 0
+repeat(_amount){
+	
+	var _inst = aux_list[| i]
+	var _dist = point_distance(x,y,_inst.x, _inst.y)
+	if(_inst.dist <_dist){
+		_dist = _inst.dist
+	}
+	_dist -=_radius*.03
+	if(_dist <= _radius*.2){
+		sugar_add(1)
+		instance_destroy(_inst)
+	}else{
+		_inst.dist = _dist
+		var _a = point_direction(x,y,_inst.x, _inst.y)
+		_inst.x =x+ lengthdir_x(_dist, _a)
+		_inst.y =y+ lengthdir_y(_dist, _a)
+	}
+	
+	i++
 }
