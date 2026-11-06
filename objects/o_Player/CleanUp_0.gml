@@ -1,1 +1,2 @@
 ds_list_destroy(aux_list)
+delete sprite_rig

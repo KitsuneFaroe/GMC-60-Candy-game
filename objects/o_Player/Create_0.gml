@@ -37,3 +37,11 @@ repeat(array_length(tail_values)/2){
 sugar_add = function(val){
 	sugar+=val
 }
+
+sprite_rig = new SpriteRig(s_PlayerHead) 
+
+sprite_rig.add("back", s_PlayerLeafBack,true)
+sprite_rig.add("head", s_PlayerHead)
+sprite_rig.add("eyes",s_PlayerEyes)
+sprite_rig.add("leaf2",s_PlayerLeaf2, true)
+sprite_rig.add("leaf1",s_PlayerLeaf1, true)

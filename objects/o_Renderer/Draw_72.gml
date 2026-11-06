@@ -10,7 +10,7 @@ if(keyboard_check_pressed(vk_add)){
 	fade_frame = (fade_frame+1) mod sprite_get_number(Fade_64);
 }
 
-var _scalar = 1 - 0.9 * half;
+var _scalar = 1 - (1 - 0.2) * half;
 if(not surface_exists(egg_surf)){
 	var _surf = surface_get_target()
 	var _w = surface_get_width(_surf)*_scalar
