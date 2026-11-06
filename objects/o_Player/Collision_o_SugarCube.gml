@@ -8,7 +8,8 @@ with(other){
 		image_angle : random(360),
 		direction : random(360),
 		dist : other.sprite_width*.6,
-		time : random_range(1.5, 1.6)
+		time : random_range(1.5, 1.6),
+		eater: other.id
 	})
 	instance_destroy()
 	}

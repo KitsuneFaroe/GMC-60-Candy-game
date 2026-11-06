@@ -5,6 +5,12 @@ if(alarm[0]<=0){
 	rotation = approach(rotation, 0, angular_friction)
 }
 
-x+=hspeed;
-y+=vspeed;
+real_x+=hspeed;
+real_y+=vspeed;
 image_angle += rotation;
+
+//if(alarm[3])> 0){
+	
+//}
+
+reload_pos()

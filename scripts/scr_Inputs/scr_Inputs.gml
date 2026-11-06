@@ -157,7 +157,7 @@ function input_axis_check(_input){
 }
 
 function input_axis_gamepad_stick(_input){
-	return gamepad_axis_value(_input[0], _input[1])
+	return gamepad_axis_value(_input[0], abs(_input[1]))* sign(_input[1])
 }
 function input_axis_gamepad_button(_input){
 	return (gamepad_button_check(_input[0], _input[1][1]) - gamepad_button_check(_input[0], _input[1][0]));
@@ -177,5 +177,5 @@ function input_axis_mouse_button(_input){
 }
 
 function input_axis_mousewheel(_input){
-	return (mouse_wheel_down() - mouse_wheel_up());
+	return (mouse_wheel_down() - mouse_wheel_up())*_input[0];
 }

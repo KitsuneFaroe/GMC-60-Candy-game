@@ -54,7 +54,4 @@ draw_self_ext(s_PlayerLeaf1,,_x,_y,_scale*-1,_scale, image_angle-leaf1_a)
 
 
 
-_x = x+lengthdir_x(16*image_yscale, phy_rotation)
-_y = y+lengthdir_y(16*image_yscale, phy_rotation)
-
-//draw_circle(_x, _y, 3, false)
+draw_circle(head_x, head_y, 3, false)

@@ -9,5 +9,7 @@ matrix_build_lookat(_x,_y,-dtan(90-fov/2) * _height/2,_x,_y, 0, -lengthdir_x(1, 
 matrix_build_projection_perspective_fov(fov, _width/_height, 0, 36000, proj_mat_p)
 matrix_build_projection_ortho(_width, _height, 0, 36000, proj_mat_o)
 
+if(keyboard_check_pressed(ord("P"))) pers = !pers;
+var _mat = pers ? proj_mat_p : proj_mat_o;
 camera_set_view_mat(view_camera[0], view_mat)
-camera_set_proj_mat(view_camera[0], proj_mat_p)
+camera_set_proj_mat(view_camera[0], _mat)

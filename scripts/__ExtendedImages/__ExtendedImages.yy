@@ -1,0 +1,9 @@
+{
+  "$GMScript":"v1",
+  "%Name":"__ExtendedImages",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__ExtendedImages",
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

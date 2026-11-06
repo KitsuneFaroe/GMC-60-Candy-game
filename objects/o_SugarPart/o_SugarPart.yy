@@ -30,7 +30,7 @@
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
     "name":"s_SugarPart",
     "path":"sprites/s_SugarPart/s_SugarPart.yy",

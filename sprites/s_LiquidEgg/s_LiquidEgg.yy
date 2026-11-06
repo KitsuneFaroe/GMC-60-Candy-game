@@ -3,7 +3,7 @@
   "%Name":"s_LiquidEgg",
   "bboxMode":0,
   "bbox_bottom":63,
-  "bbox_left":24,
+  "bbox_left":15,
   "bbox_right":63,
   "bbox_top":0,
   "collisionKind":1,
@@ -13,13 +13,14 @@
   "For3D":true,
   "frames":[
     {"$GMSpriteFrame":"v1","%Name":"981dd86a-b4e9-4b67-ab91-60cd24cf71f6","name":"981dd86a-b4e9-4b67-ab91-60cd24cf71f6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"85564897-8fa3-483d-ba61-192ed8c26ca8","name":"85564897-8fa3-483d-ba61-192ed8c26ca8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":64,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"04c3070b-dea3-41a9-afad-6be5fe36bc79","blendMode":0,"displayName":"default","isLocked":false,"name":"04c3070b-dea3-41a9-afad-6be5fe36bc79","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"bef706ea-d612-48b0-a2ec-ab7898adcefb","blendMode":0,"displayName":"default","isLocked":false,"name":"bef706ea-d612-48b0-a2ec-ab7898adcefb","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"s_LiquidEgg",
   "nineSlice":null,
@@ -49,7 +50,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":1.0,
+    "length":2.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -71,6 +72,9 @@
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"981dd86a-b4e9-4b67-ab91-60cd24cf71f6","path":"sprites/s_LiquidEgg/s_LiquidEgg.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"a8a09916-5361-4084-aa95-00e369bac5db","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"85564897-8fa3-483d-ba61-192ed8c26ca8","path":"sprites/s_LiquidEgg/s_LiquidEgg.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"e75ebe59-3823-48a2-890c-52d9564f75de","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

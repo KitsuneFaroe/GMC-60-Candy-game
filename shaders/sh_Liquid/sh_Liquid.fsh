@@ -9,6 +9,6 @@ uniform sampler2D texLiquid;
 void main()
 {
 	vec4 tex = v_vColour * texture2D( gm_BaseTexture, v_vTexcoord );
-	tex = texture2D( texLiquid, vec2(tex.r, 0.));
+	tex = texture2D( texLiquid, vec2(tex.a, 0.));
 	 gl_FragColor = tex;
 }

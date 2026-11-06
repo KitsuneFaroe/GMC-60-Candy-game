@@ -10,3 +10,7 @@ font_enable_effects(Font1,true,{
 	outlineDistance: 2,
 	outlineColor: c_black
 })
+
+//physics_particle_set_density(1)
+//physics_particle_set_radius(8)
+//physics_particle_set_damping(2)

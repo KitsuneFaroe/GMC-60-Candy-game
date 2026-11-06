@@ -19,3 +19,5 @@ ease_to = function(val, _x,_y){
 	y_target = _y
 	spd = val
 }
+
+pers = true;

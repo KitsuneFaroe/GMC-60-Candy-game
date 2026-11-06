@@ -14,7 +14,7 @@ mov_foward = [
 	[input_axis_keyboard, [vk_numpad5, vk_numpad8]],
 	[input_axis_keyboard, [ord("S"), ord("W")]],
 	[input_axis_gamepad_button, [gamepad, [gp_padd, gp_padu]]],
-	[input_axis_gamepad_stick, [gamepad, gp_axislv]]
+	[input_axis_gamepad_stick, [gamepad, -gp_axislv]]
 ]
 
 a = [

@@ -28,7 +28,7 @@ function input_get_draw(_input){
 		return [ _draw, [ $"mouse {_input[1][axis]}"]]
 	}
 	if(_input[0] = input_axis_mousewheel){
-		return [ _draw, [ $"mousewheel {axis ? "down" : "up"}"]]
+		return [ _draw, [ $"mousewheel {(axis xor _input[1]<0) ? "down" : "up"}"]]
 	}
 	if(_input[0] = input_axis_gamepad_button){
 		return [ _draw, [ $"pad{_input[1][0]} {_input[1][1][axis]}"]]

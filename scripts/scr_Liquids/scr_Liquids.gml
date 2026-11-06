@@ -1,0 +1,3 @@
+#macro EGG_LIQUID_CATEGORY 1
+#macro EGG_LIQUID_FLAGS (phy_particle_flag_water|phy_particle_flag_viscous|phy_particle_flag_tensile)
+

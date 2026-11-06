@@ -27,19 +27,15 @@ else if (dash_timer = 0) {
 	phy_speed_y *= .6
 }
 
-if(keyboard_check_pressed(vk_left)){
-	egg = 30 + 30
-}
-
 ds_list_clear(aux_list)
-var _radius = sprite_width*1.
+var _radius = sprite_width*0.5
 var _amount = collision_circle_list(x,y, _radius, o_SugarPart, false, true,aux_list,false)
 
 var i = 0
 repeat(_amount){
 	
 	var _inst = aux_list[| i]
-	var _dist = point_distance(x,y,_inst.x, _inst.y)
+	var _dist = point_distance(head_x,head_y,_inst.x, _inst.y)
 	if(_inst.dist <_dist){
 		_dist = _inst.dist
 	}
@@ -49,9 +45,9 @@ repeat(_amount){
 		instance_destroy(_inst)
 	}else{
 		_inst.dist = _dist
-		var _a = point_direction(x,y,_inst.x, _inst.y)
-		_inst.x =x+ lengthdir_x(_dist, _a)
-		_inst.y =y+ lengthdir_y(_dist, _a)
+		var _a = point_direction(head_x,head_y,_inst.x, _inst.y)
+		_inst.x =head_x+ lengthdir_x(_dist, _a)
+		_inst.y =head_y+ lengthdir_y(_dist, _a)
 	}
 	
 	i++

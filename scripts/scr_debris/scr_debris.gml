@@ -1,6 +1,9 @@
 debris_lookup = {}
 	debris_lookup[$ s_Egg] = {
 		offsets : [276,148, 276,375],
+		data: {
+			edible : false
+		}
 	}
 	debris_lookup[$ s_Corn] = {
 		offsets : [125,54, 87,130, 164,145, 61,207, 118,266, 205,248]
@@ -35,7 +38,8 @@ function debris_create(x_col=x, y_col=y){
 		var _push_y = (_y - y_col)/180
 		
 		var p_angle = -angle_difference(point_direction(x_col, y_col, _x, _y) , _oangle)*0.01;
-		instance_create_depth(_x,_y,depth,o_Debris,{
+		
+		var _struct = {
 			sprite_index,
 			image_index: 1+i,
 			image_blend,
@@ -45,10 +49,15 @@ function debris_create(x_col=x, y_col=y){
 			hspeed : _push_x,
 			vspeed : _push_y,
 			rotation : p_angle,
-			xoffset : (_ox - _offsets[i*2]  )*image_xscale,
-			yoffset : (_oy - _offsets[i*2+1])*image_yscale,
-			f_time : 2
-		})
+			xoffset : (_ox - _offsets[i*2]  ),
+			yoffset : (_oy - _offsets[i*2+1]),
+			f_time : .3,
+			sugar: 100,
+		}
+		if(_debris[$ "data"] != undefined) struct_assign(_struct, _debris.data)
+		
+		
+		var _inst =instance_create_depth(_x,_y,depth,o_Debris,_struct)
 		i++
 	}
 }
